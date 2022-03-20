@@ -31,6 +31,8 @@ Create table User_Type(
 usertypename	varchar(30),
 usertype_id	  Numeric(18)primary key,
 )
+insert into User_Type values('regular',101);
+insert into User_Type values('regular',102);
 
 drop table   User_Type
 select * from User_Type
@@ -45,6 +47,9 @@ image	 varchar(30),
 status	varchar(30),	 
  
 )
+insert into Products values (1,'Dellxp',35000,'https://merchantfly.com/wp-content/uploads/2015/08/Dell-XPS-13_021.jpeg','available');
+insert into Products values (2,'Lenovothinkpad',50000,'https://i5.walmartimages.com/asr/483eea15-3313-4481-8a4d-a557229fcd71_1.a42c4a0f7445c4fe50e7acc3cac63c02.jpeg','available');
+insert into Products values (3,'Hp',35000,'https://tse4.mm.bing.net/th?id=OIP.cQU3uEk3l6y6Ylx60F_0JgHaF6&pid=Api&P=0&w=216&h=172','Not available');
 drop table  Products
 select * from Products
 ------------------------------------------------
@@ -82,6 +87,7 @@ emiduration	varchar(30),
 emitype_id	Numeric(20),
 foreign key (emitype_id) References  Emi_Table(emitype_id)
 )
+
 
 drop table Emi_Type
 select * from Emi_Type
