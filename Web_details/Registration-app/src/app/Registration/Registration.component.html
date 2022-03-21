@@ -1,0 +1,136 @@
+<div>
+     <h2><b><style="float:middle"></style>REGISTRATION FORM<h2><b>
+       <form  [formGroup]="registrationform" >
+      <fieldset>
+      
+        <div class="form-group">
+             
+             <label for = "name">Full Name:</label>
+             <input type="text" id="name" name="name" placeholder="enter your name"
+                formcontrolName="name" >
+                 
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="birthday">Date of Birth:</label>
+            <input type="date" id="birthday" name="birthday" placeholder="DOB"
+            formControlName> 
+        </div>
+        
+        
+        
+            <div class="form-group"> 
+                  
+                <label  for = "Email id">Email id:</label>
+                <input type ="text" id="Emailid" name="Emailid" placeholder="Emailid"
+                formControlName="Emailid">
+             
+
+            </div>
+         
+         
+         
+            <div class="form-group">
+                
+                <label for = "mobile no">Ph Number:</label>
+                <input type="Number" id="Number" name="Number" placeholder="number" 
+                 pattern="\d{10}" required     formcontrolName="mobile no">
+                 
+            </div>
+           
+        
+        
+         
+        <div class="form-group" >
+          
+                <label for = "username">UserName:</label>
+                <input type="text" id="username" name="username" placeholder= " user name"  formcontrolName="username" >
+             
+        </div>
+        
+         
+       
+       <div class="form-group">
+             
+             <label for = "password">Password:</label>
+             <input type="password" id="password" name="password" placeholder=" password"   formcontrolName="password">
+             
+        </div>
+     <div>
+            
+         <div [hidden]="registrationform.controls['password'].valid || registrationform.controls['username'].pristine"
+             class="alert alert-danger">
+              <div *ngIf="registrationform.controls['password'].errors?.['required']"
+                password is required>
+               </div>
+              <div *ngIf="registrationform.controls['password'].errors?.['minlength']"
+             password minlength must be 6>
+              </div>
+              <div *ngIf="registrationform.controls['password'].errors?.['maxlength']"
+               password maxlength must be 12>
+              </div>
+          </div>
+             
+        </div>
+       
+       <div class="form-group">
+             
+             <label for = "confirm password">confirm password:</label>
+             <input type="confirm password" id="confirm password" name="confirm password" placeholder=" confirm password"    formcontrolName="confirm password">
+            
+        </div>
+       
+
+       <div class="form-group">
+           
+           <label for = "Address">Address:</label>
+           <input type="Address" id="Address" name="Address" placeholder="enter your Address"
+           formControlName="Address">
+        
+       </div>
+       
+       <div class="form-group">
+            
+           <label for ="Card Type">Card Type:</label>
+           <input Type ="radio" id="Gold" name="Card Type" value="Gold" formControlName="Card Type">
+           <label for ="Card Type">Gold</label>
+           <input Type="radio" id="Titanium" name="Card Type"   value="Titanium" formControlName="Card Type">
+           <label for ="Card Type">Titanium</label>
+          
+        </div>
+       
+
+       <div class="form-group">
+            
+           <label for ="Bank Name">Bank Name:</label>
+           <input Type="Bank Name" id="Bank Name" name="Bank Name" placeholder="Bank Name" formControlName="Bank Name">
+             
+
+       </div>
+       <div class="form-group">
+         
+            <label for =" Account No"> Account No:</label>
+            <input Type=" Account No" id=" Account No" name=" Account No" placeholder="Account No " formControlName= "Account No">
+              
+
+       </div>
+        
+
+       <div class="form-group">
+           
+           <label for="IFSC code">IFSC code:</label>
+           <input Type="IFSC code" id="IFSC code" name="IFSC code" placeholder="IFSC code" formControlName="IFSC code">
+
+              
+       </div>
+       
+ 
+       <div>
+            
+         <button   class ="btn btn-primary" type="REGISTER">REGISTER</button>
+          <button class="btn btn-primary" type="RESET">RESET</button>
+              
+        </div>
+     </fieldset>
+    </form>
+
