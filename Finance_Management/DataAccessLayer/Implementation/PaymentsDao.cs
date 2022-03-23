@@ -1,17 +1,22 @@
-﻿using System;
+﻿using Finance_Management.Repository;
+using System;
+using System.Linq;
 
 namespace Finance_Management.DataAccessLayer
 {
     public class PaymentsDao
     {
-        internal static object UpdateDownPayment()
-        {
-            throw new NotImplementedException();
-        }
+        //private FinancedbContext db;
 
-        internal static object GetById()
-        {
-            throw new NotImplementedException();
-        }
+
+        //public PaymentsDao(FinancedbContext financeDbContext)
+        //{
+        //    db = financeDbContext;
+        //}
+        //public Payments fetchByid(int id)
+        //{
+        //    return db.Payments.Where(p => p.Paymentid == id).First<Payments>();
+        //}
+
     }
 }

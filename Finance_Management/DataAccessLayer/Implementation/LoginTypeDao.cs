@@ -17,14 +17,11 @@ namespace Finance_Management.DataAccessLayer
             db = financeDbContext;
         }
 
-        public void Delete(Logintype userid)
-        {
-            throw new NotImplementedException();
-        }
 
         public int Update(Logintype password)
         {
-            throw new NotImplementedException();
+            db.Logintype.Update(password);
+            return db.SaveChanges();
         }
     }
 

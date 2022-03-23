@@ -1,5 +1,4 @@
-﻿using Finance_Management.Controllers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 // Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
@@ -10,8 +9,6 @@ namespace Finance_Management.Repository
 {
     public partial class UserType
     {
-        internal readonly int UserTypeId;
-
         public UserType()
         {
             Logintype = new HashSet<Logintype>();
@@ -20,13 +17,6 @@ namespace Finance_Management.Repository
         public string Usertypename { get; set; }
         public decimal UsertypeId { get; set; }
 
-        internal object GetByid(int id, UserType obj1)
-        {
-            throw new NotImplementedException();
-        }
-
         public virtual ICollection<Logintype> Logintype { get; set; }
-
- 
     }
 }

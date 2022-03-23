@@ -7,23 +7,23 @@ using Finance_Management.DataAccessLayer;
 namespace Finance_Management.Controllers
 {
 
-    [Route("api/[controller]")]
-    [ApiController]
-    public class EmiTableController : Controller
-    {
+    //[Route("api/[controller]")]
+    //[ApiController]
+    //public class EmiTableController : Controller
+    //{
 
-        private IEmiTable obj;
-        public EmiTableController(IEmiTable obj)
-        {
-            this.obj = obj;
-        }
-        [HttpGet]
-        [Route("fetchById")]
-        public IActionResult FetchById(int id)
-        {
-            var fetchedData = obj.FetchById();
-            return Ok(fetchedData);
-        }
+    //    private IEmiTable obj;
+    //    public EmiTableController(IEmiTable obj)
+    //    {
+    //        this.obj = obj;
+    //    }
+    //    [HttpGet]
+    //    [Route("fetchById")]
+    //    public IActionResult FetchById(int id)
+    //    {
+    //        var fetchedData = obj.FetchById();
+    //        return Ok(fetchedData);
+    //    }
         //[HttpPost]
         //[Route("updateAmount")]
         //public IActionResult UpdateAmount()
@@ -33,4 +33,4 @@ namespace Finance_Management.Controllers
         //}
 
     }
-}
+

@@ -10,22 +10,28 @@ namespace Finance_Management.DataAccessLayer
     public class UserTypeDao : IuserType
     {
 
-        private FinanceDbContext db;
+        //private FinanceDbContext db;
 
 
-        public UserTypeDao(FinanceDbContext financeDbContext)
+        //public UserTypeDao(FinanceDbContext financeDbContext)
+        //{
+        //    db = financeDbContext;
+        //}
+
+        //public UserType GetById(int id)
+        //{
+        //    return db.UserType.Where(p => p.UserType_id == id).First<UserType>();
+
+        //}
+        public BusinessAccessLayer.UserType GetById(int id)
         {
-            db = financeDbContext;
+            throw new System.NotImplementedException();
         }
 
-        public UserType GetById(int id)
+        public int update(BusinessAccessLayer.UserType id)
         {
-            return db.UserType.Where(p => p.UserType_id == id).First<UserType>();
-            
+            throw new System.NotImplementedException();
         }
-
-        
- 
     }
 }
 

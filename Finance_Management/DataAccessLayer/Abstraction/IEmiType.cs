@@ -9,7 +9,7 @@ namespace Finance_Management.DataAccessLayer
     public interface IEmiType
     {
         
-        string Update(EmiType duration);
-        object UpdateDuration();
+        //string Update(EmiType duration);
+       
     }
 }

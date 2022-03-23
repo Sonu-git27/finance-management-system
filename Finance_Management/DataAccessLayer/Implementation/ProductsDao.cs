@@ -7,22 +7,22 @@ namespace Finance_Management.DataAccessLayer
 {
     public class ProductsDao 
     {
-        private FinancedbContext db;
-        public ProductsDao(FinancedbContext financeDbContext)
-        {
-            db = financeDbContext;
-        }
+        //private FinancedbContext db;
+        //public ProductsDao(FinancedbContext financeDbContext)
+        //{
+        //    db = financeDbContext;
+        //}
 
-          public Products FetchbyId(int id)
-          {
-            return db.Products.Where(p => p.ProductId == id).First<Products>();
-          }
+        //  public Products FetchbyId(int id)
+        //  {
+        //    return db.Products.Where(p => p.ProductId == id).First<Products>();
+        //  }
 
-          public int InsertProducts(Products AddProducts)
-        {
-            db.Products.Add(AddProducts);
-            return db.SaveChanges();
-        }
+        //  public int InsertProducts(Products AddProducts)
+        //{
+        //    db.Products.Add(AddProducts);
+        //    return db.SaveChanges();
+        //}
 
         
 

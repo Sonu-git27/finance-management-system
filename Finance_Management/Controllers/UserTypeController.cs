@@ -9,25 +9,25 @@ namespace Finance_Management.Controllers
     public class UserTypeController : Controller
     {
 
-        private UserType obj1;
-        public UserTypeController(IuserType obj1)
-        {
-            this.obj1 = (UserType)obj1;
-        }
+        //private UserType obj1;
+        //public UserTypeController(IuserType obj1)
+        //{
+        //    this.obj1 = (UserType)obj1;
+        //}
 
 
 
 
-        [HttpGet]
+        //[HttpGet]
          
-        [Route("{Usertypeid}")]
-        public IActionResult GetByid(int id)
-        {
+        //[Route("{Usertypeid}")]
+        //public IActionResult GetByid(int id)
+        //{
             
-            var result = obj1.GetByid(id, obj1);
-            return  Ok(result);
+        //    var result = obj1.GetByid(id, obj1);
+        //    return  Ok(result);
                 
-        }
+        //}
     }
 
     

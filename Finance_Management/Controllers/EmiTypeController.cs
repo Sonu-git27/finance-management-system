@@ -5,25 +5,25 @@ namespace Finance_Management.Controllers
 {
     
     
-        [Route("api/[controller]")]
-        [ApiController]
-        public class EmiTypeController : Controller
-        {
+        //[Route("api/[controller]")]
+        //[ApiController]
+        //public class EmiTypeController : Controller
+        //{
 
-        private IEmiType objdata ;
-        public EmiTypeController(IEmiType objdata)
-        {
-            this.objdata = objdata;
-        }
+        //private IEmiType objdata ;
+        //public EmiTypeController(IEmiType objdata)
+        //{
+        //    this.objdata = objdata;
+        //}
 
-        [HttpPost]
-            [Route("updateDuration")]
-            public IActionResult UpdateDuration()
-            {
-                var products = objdata.UpdateDuration();
-                return Ok(products);
-            }
+        //[HttpPost]
+        //    [Route("updateDuration")]
+        //    public IActionResult UpdateDuration()
+        //    {
+        //        var EmiType = objdata.UpdateDuration();
+        //        return Ok(EmiType);
+        //    }
 
 
-        }
+        //}
 }

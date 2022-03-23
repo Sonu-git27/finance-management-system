@@ -7,8 +7,8 @@ namespace Finance_Management.DataAccessLayer
     public interface IEmiTable
     {
 
-        EmiTable FetchByid(int id);
-        object FetchById();
+        //EmiTable FetchByid(int id);
+        //object FetchById();
         
     }
 }

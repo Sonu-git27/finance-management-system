@@ -6,6 +6,7 @@ namespace Finance_Management.DataAccessLayer
 {
     public interface IProducts
     {
-        object FetchbyId();
+        //object FetchbyId();
+        //object InsertProducts(Repository.Products addProducts);
     }
 }

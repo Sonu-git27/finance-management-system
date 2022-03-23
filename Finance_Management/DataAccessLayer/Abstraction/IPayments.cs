@@ -8,9 +8,8 @@ namespace Finance_Management.DataAccessLayer
     public interface IPayments
     {
 
-        int Update(decimal DownPayment);
-        PaymentsDao GetByid(int id);
-        object UpdateDownPayment();
-        object GetById();
+        //int Update(decimal DownPayment);
+        //PaymentsDao GetByid(int id);
+        //object fetchByid();
     }
 }

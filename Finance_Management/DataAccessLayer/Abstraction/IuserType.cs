@@ -6,7 +6,7 @@ namespace Finance_Management.DataAccessLayer
 {
     public interface IuserType
     {
-        int update(UserType id);
-        UserType GetById(int id);
+        //int update(UserType id);
+        //UserType GetById(int id);
     }
 }

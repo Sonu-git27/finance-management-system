@@ -10,32 +10,26 @@ namespace Finance_Management.Controllers
     [ApiController]
     public class PaymentsController : Controller
     {
-        private object PaymentDao;
+        //private object PaymentDao;
 
 
 
-        private IPayments data;
-        public PaymentsController(IPayments data)
-        {
-            this.data = data;
-        }
+        //private IPayments data;
+        //public PaymentsController(IPayments data)
+        //{
+        //    this.data = data;
+        //}
 
-        [HttpUpdate]
+        //[HttpGet]
 
-            [Route("id")]
+        //    [Route("id")]
 
-            private IActionResult updateDownPayment()
-
-            {
-
-                var result = data.UpdateDownPayment();
-                return Ok(result);
-            }
-            private IActionResult GetById()
-            {
-                var result = data.GetById();
-                return Ok(result);
-            }
+           
+        //    private IActionResult fetchByid()
+        //    {
+        //        var result = data.fetchByid();
+        //        return Ok(result);
+        //    }
 
 
         

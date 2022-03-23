@@ -7,10 +7,10 @@ namespace Finance_Management
     public interface IOrders
     {
 
-        int Update(DateTime Orderdate);
+       
         
-        Orders FetchByid(int id);
-        object fetchById();
+        //Orders FetchByid(int id);
+        //object fetchByid();
     }
 }
     

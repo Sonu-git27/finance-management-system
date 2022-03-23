@@ -1,3 +1,5 @@
+using Finance_Management.Controllers.DataAccessLayer;
+using Finance_Management.DataAccessLayer;
 using Finance_Management.DataAccessLayer.Implementation;
 using Finance_Management.Repository;
 using Microsoft.AspNetCore.Builder;
@@ -28,9 +30,15 @@ namespace Finance_Management
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<FinancedbContext>(options => options.UseSqlServer(Configuration[ConnectionString]));
-            services.AddTransient<IRegistration, Registration>();
-
+            services.AddDbContext<FinanceDbContext>(options => options.UseSqlServer(Configuration[ConnectionString]));
+            services.AddTransient<IRegistration, RegistrationDao>();
+           // services.AddTransient<IProducts, ProductsDao>();
+            services.AddTransient<ILoginType, LoginTypeDao>();
+            services.AddTransient<IEmiType, EmiTypeDao>();
+            services.AddTransient<IEmiTable, EmiTableDao>();
+            services.AddTransient<IuserType, UserTypeDao>();
+           // services.AddTransient<IPayments, PaymentsDao>();
+           // services.AddTransient<IOrders, OrdersDao>();
              
             services.AddControllers();
         }

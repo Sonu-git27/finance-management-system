@@ -8,13 +8,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Finance_Management.Repository
 {
-    public partial class FinancedbContext : DbContext
+    public partial class FinanceDbContext : DbContext
     {
-        public FinancedbContext()
+        public FinanceDbContext()
         {
         }
 
-        public FinancedbContext(DbContextOptions<FinancedbContext> options)
+        public FinanceDbContext(DbContextOptions<FinanceDbContext> options)
             : base(options)
         {
         }
@@ -32,8 +32,8 @@ namespace Finance_Management.Repository
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning  To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("server=MSI;initial catalog=Financedb;Integrated Security=True");
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                optionsBuilder.UseSqlServer("Server=MSI; Initial Catalog=FinanceDb; Integrated Security=True;");
             }
         }
 

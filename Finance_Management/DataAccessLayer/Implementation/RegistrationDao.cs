@@ -6,9 +6,9 @@ namespace Finance_Management.Controllers.DataAccessLayer
 {
     public class RegistrationDao: IRegistration
     {
-        private FinancedbContext db;
+        private FinanceDbContext db;
 
-        public RegistrationDao(FinancedbContext  _db)
+        public RegistrationDao(FinanceDbContext  _db)
         {
             db =  _db;
         }
@@ -23,7 +23,7 @@ namespace Finance_Management.Controllers.DataAccessLayer
             return db.Registration.Where(p => p.RegId == id).First<Registration>();
         }
 
-        
+
 
 
 

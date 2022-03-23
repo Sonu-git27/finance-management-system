@@ -22,16 +22,16 @@ namespace Finance_Management.Controllers
         //}
         
         [HttpGet]
-        [Route("{Registrationid}")]
-        public IActionResult GetById(int id)
+        [Route("Registrationid")]
+        public IActionResult GetById(int Registrationid)
         {
             
-            var result = objectdata.GetById( id);
+            var result = objectdata.GetById(Registrationid);
             return this.Ok(result);
         }
          [HttpGet]
-         [Route("{Details}")]
-         public IActionResult GetAllDetails()
+         [Route("RegId")]
+         public IActionResult GetAllDetails( int RegId)
         {
              
             var result = objectdata.GetAllDetails();
@@ -42,6 +42,10 @@ namespace Finance_Management.Controllers
         }
         
 
+    }
+
+    public class RegId
+    {
     }
 }
 
