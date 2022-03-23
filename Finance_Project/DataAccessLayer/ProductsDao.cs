@@ -9,13 +9,15 @@ using Products = Finance_Project.Reposotory.Products;
 
 namespace Finance_Project.DataAccessLayer
 {
-    public class ProductsDao : IProducts
+    public class ProductsDao 
     {
         private financedbContext db;
-        public ProductsDao(financedbContext financedbContext)
+        public ProductsDao(financedbContext financeDbContext)
         {
-            db = financedbContext;
+            db = financeDbContext;
         }
+
+
         public bool InsertProduct(Products ProductObj)
         {
             int result = 0;
@@ -43,8 +45,17 @@ namespace Finance_Project.DataAccessLayer
             }
         }
 
+        internal static object InsertProducts()
+        {
+            throw new NotImplementedException();
+        }
 
-        public ProductsDao GetProductById(int id)
+        internal static object FetchAllProductsId()
+        {
+            throw new NotImplementedException();
+        }
+
+        public ProductsDao FetchById(int id)
         {
             ProductsDao Product = null;
             try
@@ -59,7 +70,7 @@ namespace Finance_Project.DataAccessLayer
                         Product = new Products
                         {
                             ProductId = product.ProductId,
-                            Name = product.name,
+                            Name = product.Name,
                             Price = product.Price.Value,
                             Image = product.Image,
                             Status = product.Status,

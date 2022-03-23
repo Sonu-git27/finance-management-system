@@ -16,7 +16,6 @@ namespace Finance_Project.Reposotory
 
         public decimal ProductId { get; set; }
         public string Name { get; set; }
-        public string name { get; internal set; }
         public decimal? Price { get; set; }
         public string Image { get; set; }
         public string Status { get; set; }

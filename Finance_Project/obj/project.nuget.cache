@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "o+TtM7b9HzjtbWrQJ3nY5tfsZb/10XXtolfrKR4iETsmkXw6DZND15EME/+WYuO9Lk4UbKkNWZah2GN6VsPuhw==",
+  "dgSpecHash": "w36pgMFVzz/YA83DwCGpPH959TVZ8zJuhXVxIdk5h/sYlX7spUxpM2uujWwhYB4Q61G/n3h/7VPbzMAqgTQCyA==",
   "success": true,
   "projectFilePath": "D:\\Finance_project\\finance-management-system\\Finance_Project\\Finance_Project.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\sonua\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.23\\microsoft.entityframeworkcore.relational.3.1.23.nupkg.sha512",
     "C:\\Users\\sonua\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.23\\microsoft.entityframeworkcore.sqlserver.3.1.23.nupkg.sha512",
     "C:\\Users\\sonua\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.23\\microsoft.entityframeworkcore.tools.3.1.23.nupkg.sha512",
+    "C:\\Users\\sonua\\.nuget\\packages\\microsoft.exchange.webservices\\2.2.0\\microsoft.exchange.webservices.2.2.0.nupkg.sha512",
     "C:\\Users\\sonua\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.23\\microsoft.extensions.caching.abstractions.3.1.23.nupkg.sha512",
     "C:\\Users\\sonua\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.23\\microsoft.extensions.caching.memory.3.1.23.nupkg.sha512",
     "C:\\Users\\sonua\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.23\\microsoft.extensions.configuration.3.1.23.nupkg.sha512",
@@ -35,7 +36,9 @@
     "C:\\Users\\sonua\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\sonua\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\sonua\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\sonua\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\sonua\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\sonua\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\sonua\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\sonua\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\sonua\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -105,5 +108,16 @@
     "C:\\Users\\sonua\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\sonua\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Exchange.WebServices 2.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Exchange.WebServices",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

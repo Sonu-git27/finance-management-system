@@ -1,12 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Finance_Project.DataAccessLayer;
+using Microsoft.AspNetCore.Routing;
 
 namespace Finance_Project.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
+     
     public class LoginController : Controller
     {
-        public IActionResult Index()
+
+        [HttpUpdate]
+        [Route("id")]
+        private IActionResult updatePassword()
         {
-            return View();
+            var result = LoginTypeDao.UpdatePassword();
+            return Ok(result);
         }
+
+        
     }
 }

@@ -10,8 +10,11 @@ namespace Finance_Project.BussinessAccessLayer
 {
     public class Registration
     {
-        internal object IFSC_code;
-        internal object Reg_id;
+        public Registration(decimal regId, string ifscCode)
+        {
+            RegId = regId;
+            IfscCode = ifscCode;
+        }
 
         public string FullName { get; set; }
         public string Email { get; set; }
@@ -33,5 +36,7 @@ namespace Finance_Project.BussinessAccessLayer
         {
             throw new NotImplementedException();
         }
+
+        
     }
 }

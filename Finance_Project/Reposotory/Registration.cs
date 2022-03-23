@@ -9,8 +9,6 @@ namespace Finance_Project.Reposotory
 {
     public partial class Registration
     {
-        internal string name;
-
         public Registration()
         {
             EmiTable = new HashSet<EmiTable>();

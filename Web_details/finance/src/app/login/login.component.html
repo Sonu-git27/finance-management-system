@@ -1,0 +1,35 @@
+<div id="c">
+    <form [formGroup]="loginform" (ngLogin)="LoginData()">
+        <h3>LOGIN</h3><br>
+        <div class="form-group">
+            <label for="username">User Name:&nbsp;</label>
+            <input type="email" class="form-control" name="username" placeholder="Enter User Name" id="username" formControlName="username">
+        </div>
+        <br/>
+
+        <div [hidden]="loginform.controls['username'].valid || loginform.controls['username'].pristine"
+            class="alert alert-danger">
+            <div *ngIf="loginform.controls['username'].errors?.['required']">
+                User name is required
+            </div>
+            <div *ngIf="loginform.controls['username'].errors?.['email']">
+                User name must be an email id
+            </div>
+        </div>
+      
+
+        <div class="form-group">
+            <label for="password">Password:&nbsp;</label>
+            <input type="password" class="form-control" placeholder="Enter password" name="password" id="password" formControlName="password">
+        </div>
+        <br/>
+
+        
+
+        <div id="submitDiv">
+            <button type="submit" routerLink="/dash-board">LOGIN</button>
+        </div><br>
+        <p>New User? &nbsp;&nbsp;<a href="/registration">Register here</a></p>
+        <a href="/forgetpassword">ForgotPassword?</a>
+    </form>
+</div>

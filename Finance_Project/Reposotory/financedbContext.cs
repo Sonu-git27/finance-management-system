@@ -10,9 +10,6 @@ namespace Finance_Project.Reposotory
 {
     public partial class financedbContext : DbContext
     {
-        internal DbSet<Products> Products;
-        internal DbSet<BussinessAccessLayer.EmiTable> emiTable;
-
         public financedbContext()
         {
         }
@@ -27,13 +24,7 @@ namespace Finance_Project.Reposotory
         public virtual DbSet<Logintype> Logintype { get; set; }
         public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<Payments> Payments { get; set; }
-        public virtual DbSet<Products> EmiTable { get; set; }
-
-        internal object GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
+        public virtual DbSet<Products> Products { get; set; }
         public virtual DbSet<Registration> Registration { get; set; }
         public virtual DbSet<UserType> UserType { get; set; }
 
@@ -42,7 +33,7 @@ namespace Finance_Project.Reposotory
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("server=MSI; initial catalog=financedb;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Server=MSI;Database=financedb; initial catalog= financedb; Integrated Security= True;");
             }
         }
 
