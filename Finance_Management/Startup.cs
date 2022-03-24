@@ -1,4 +1,4 @@
-using Finance_Management.Controllers.DataAccessLayer;
+using Finance_Management.DataAccessLayer.DataAccessLayer;
 using Finance_Management.DataAccessLayer;
 using Finance_Management.DataAccessLayer.Implementation;
 using Finance_Management.Repository;
@@ -25,14 +25,14 @@ namespace Finance_Management
         }
 
         public IConfiguration Configuration { get; }
-        public string ConnectionString { get; private set; }
+        //public string ConnectionString { get; private set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<FinanceDbContext>(options => options.UseSqlServer(Configuration[ConnectionString]));
+            services.AddDbContext<FinancedbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<IRegistration, RegistrationDao>();
-           // services.AddTransient<IProducts, ProductsDao>();
+            //services.AddTransient<IProducts, ProductsDao>();
             services.AddTransient<ILoginType, LoginTypeDao>();
             services.AddTransient<IEmiType, EmiTypeDao>();
             services.AddTransient<IEmiTable, EmiTableDao>();

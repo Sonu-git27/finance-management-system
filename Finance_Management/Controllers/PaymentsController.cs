@@ -3,7 +3,7 @@ using Finance_Management.BusinessAccessLayer;
 using Finance_Management.DataAccessLayer;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Finance_Management.Controllers
+namespace Finance_Management.DataAccessLayer
 {
 
     [Route("api/[controller]")]

@@ -9,9 +9,6 @@ namespace Finance_Management.BusinessAccessLayer
         public decimal Remainingbalance { get; set; }
         public int Orderid { get; set; }
 
-        internal static object Update(int id, PaymentModel paymentmodel)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

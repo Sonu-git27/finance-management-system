@@ -2,7 +2,7 @@
 using Finance_Management.Repository;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Finance_Management.Controllers
+namespace Finance_Management.DataAccessLayer
 {
     [Route("api/[controller]")]
     [ApiController]

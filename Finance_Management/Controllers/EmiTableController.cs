@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Routing;
 using Finance_Management.DataAccessLayer.Implementation;
 using Finance_Management.DataAccessLayer;
 
-namespace Finance_Management.Controllers
+namespace Finance_Management.DataAccessLayer
 {
 
     //[Route("api/[controller]")]
