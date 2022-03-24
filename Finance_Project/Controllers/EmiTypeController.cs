@@ -1,12 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Finance_Project.DataAccessLayer;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Finance_Project.Controllers
 {
-    public class EmiTypeController : Controller
-    {
-        public IActionResult Index()
+    
+    
+        [Route("api/[controller]")]
+        [ApiController]
+        public class ProductController : Controller
         {
-            return View();
+
+            [HttpPost]
+            [Route("updateDuration")]
+            public IActionResult UpdateDuration()
+            {
+                var products = EmiTypeDao.UpdateDuration();
+                return Ok(products);
+            }
+
+
         }
-    }
 }

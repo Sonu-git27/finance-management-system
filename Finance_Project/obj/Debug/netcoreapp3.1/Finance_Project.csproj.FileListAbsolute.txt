@@ -58,3 +58,6 @@ D:\Finance_project\finance-management-system\Finance_Project\obj\Debug\netcoreap
 D:\Finance_project\finance-management-system\Finance_Project\obj\Debug\netcoreapp3.1\Finance_Project.dll
 D:\Finance_project\finance-management-system\Finance_Project\obj\Debug\netcoreapp3.1\Finance_Project.pdb
 D:\Finance_project\finance-management-system\Finance_Project\obj\Debug\netcoreapp3.1\Finance_Project.genruntimeconfig.cache
+D:\Finance_project\finance-management-system\Finance_Project\bin\Debug\netcoreapp3.1\Microsoft.Exchange.WebServices.Auth.dll
+D:\Finance_project\finance-management-system\Finance_Project\bin\Debug\netcoreapp3.1\Microsoft.Exchange.WebServices.dll
+D:\Finance_project\finance-management-system\Finance_Project\bin\Debug\netcoreapp3.1\nunit.framework.dll

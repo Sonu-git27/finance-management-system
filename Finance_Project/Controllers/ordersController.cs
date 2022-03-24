@@ -1,12 +1,38 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Finance_Project.DataAccessLayer;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Finance_Project.Controllers
 {
-    public class ordersController : Controller
-    {
-        public IActionResult Index()
+      
+        [Route("api/[controller]")]
+        [ApiController]
+
+        public class OrdersController : Controller
+
         {
-            return View();
+
+            [HttpUpdate]
+
+            [Route("id")]
+
+            private IActionResult updateOrderdate()
+
+            {
+
+                var result = OrdersDao.UpdateOrderdate();
+                return Ok(result);
+            }
+            [HttpGet]
+            [Route("id")]
+            private IActionResult fetchById()
+            {
+                var result = OrdersDao.fetchById();
+                return Ok(result);
+            }
         }
-    }
+
+
+    
+
 }
+

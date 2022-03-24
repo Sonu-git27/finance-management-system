@@ -16,7 +16,17 @@ namespace Finance_Project.DataAccessLayer
             db = financeDbContext;
         }
 
-         public int Update(Logintype password)
+        internal static object UpdatePassword()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(Logintype userid)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Update(Logintype password)
         {
             this.db.Logintype.Update(password);
             this.db.SaveChanges();
@@ -24,11 +34,7 @@ namespace Finance_Project.DataAccessLayer
             throw new NotImplementedException();
         }
 
-        public void Delete(Logintype userid)
-        {
-            this.db.Remove(userid);
-            this.db.SaveChanges();
-        }
+         
 
 
 

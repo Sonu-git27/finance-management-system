@@ -49,6 +49,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.23, )"
+            },
+            "Microsoft.Exchange.WebServices": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
             }
           },
           "imports": [
