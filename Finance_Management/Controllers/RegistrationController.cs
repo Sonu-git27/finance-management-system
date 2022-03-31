@@ -19,56 +19,47 @@ namespace Finance_Management.DataAccessLayer
         {
             this.objectdata = objectdata;
         }
-                                                                                               
-        [HttpPost]
-        public IActionResult InsertRegistration(Registration registration)
-        {
-            if (this.ModelState.IsValid)
-            {
-                this.objectdata.Add(registration);
-            }
-            return null;
-        }
+
+
 
         private IActionResult CreatedAction(string v)
         {
             throw new NotImplementedException();
         }
 
-        
+
 
 
 
 
         [HttpGet]
         [Route("  GetById /{id}")]
-        public IActionResult GetById(int  id)
+        public IActionResult GetById(int id)
         {
-            
-            var result = objectdata.GetById( id);
+
+            var result = objectdata.GetById(id);
             return this.Ok(result);
         }
-         [HttpGet]
-         [Route(" GetAllDetails")]
-         public IActionResult GetAllDetails( )
+        [HttpGet]
+        [Route(" GetAllDetails")]
+        public IActionResult GetAllDetails()
         {
-             
+
             var result = objectdata.GetAllDetails();
             return this.Ok(result);
 
-            //ar result = RegistrationDao.GetAllDetails();
-            //return this.Ok(result);
+
+
+
         }
-        
 
-    }
+        public class RegistrationRepsitory
+        {
+        }
 
-    public class RegistrationRepsitory
-    {
-    }
-
-    public class RegId
-    {
+        public class RegId
+        {
+        }
     }
 }
 

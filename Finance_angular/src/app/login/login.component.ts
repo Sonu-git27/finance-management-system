@@ -4,7 +4,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable, Observer } from 'rxjs';
 import { loginModel } from 'src/models/login.models';
 import { LoginService } from 'src/services/login.services';
-import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',

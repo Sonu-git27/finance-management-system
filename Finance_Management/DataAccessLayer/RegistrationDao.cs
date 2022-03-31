@@ -15,10 +15,7 @@ namespace Finance_Management.DataAccessLayer.DataAccessLayer
             db =  _db;
         }
 
-        public int Add(Registration registration)
-        {
-            throw new NotImplementedException();
-        }
+        
 
 
 
@@ -32,12 +29,14 @@ namespace Finance_Management.DataAccessLayer.DataAccessLayer
             return db.Registration.Where(p => p.RegId == id).First<Registration>();
         }
 
-        public int InsertRegistration(Registration AddRegistration)
+       
+
+        void IRegistration.Add(Registration registration)
         {
             throw new NotImplementedException();
         }
 
-        
+
 
 
 

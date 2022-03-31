@@ -14,7 +14,6 @@ import { DellComponent } from './dell/dell.component';
 import { HpComponent } from './hp/hp.component';
 import { LenovoComponent } from './lenovo/lenovo.component';
 import { PaymentComponent } from './payment/payment.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ActivateComponent } from './activate/activate.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 import { SuccessComponent } from './success/success.component';
@@ -26,11 +25,14 @@ import { ChargesComponent } from './charges/charges.component';
     AppComponent,
     ProductsComponent,
     LoginComponent,
-    RegistrationComponent,HomeComponent, ForgetpasswordComponent, DashBoardComponent, DellComponent, HpComponent, LenovoComponent, PaymentComponent, ActivateComponent, TermsAndConditionsComponent, SuccessComponent, LogoutComponent, ChargesComponent
+    RegistrationComponent,HomeComponent, 
+    ForgetpasswordComponent, DashBoardComponent, 
+    DellComponent, HpComponent, LenovoComponent, PaymentComponent, 
+    ActivateComponent, TermsAndConditionsComponent, SuccessComponent, LogoutComponent, ChargesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,ReactiveFormsModule, NgbModule
+    AppRoutingModule,FormsModule,ReactiveFormsModule, NgModule
   ],
   providers: [],
   bootstrap: [AppComponent]

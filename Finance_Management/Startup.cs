@@ -32,13 +32,11 @@ namespace Finance_Management
         {
             services.AddDbContext<FinancedbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<IRegistration, RegistrationDao>();
-            //services.AddTransient<IProducts, ProductsDao>();
             services.AddTransient<ILoginType, LoginTypeDao>();
             services.AddTransient<IEmiType, EmiTypeDao>();
             services.AddTransient<IEmiTable, EmiTableDao>();
             services.AddTransient<IuserType, UserTypeDao>();
-           // services.AddTransient<IPayments, PaymentsDao>();
-           // services.AddTransient<IOrders, OrdersDao>();
+           
              
             services.AddControllers();
         }
