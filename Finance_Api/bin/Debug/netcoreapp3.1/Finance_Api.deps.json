@@ -31,6 +31,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Finance_Api/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.23",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.23",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.23",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",

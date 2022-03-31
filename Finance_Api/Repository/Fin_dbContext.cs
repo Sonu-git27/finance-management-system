@@ -24,6 +24,7 @@ namespace Finance_Api.Repository
         public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<Products> Products { get; set; }
         public virtual DbSet<UserRegistration> UserRegistration { get; set; }
+        public object UserRegistrations { get; internal set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
