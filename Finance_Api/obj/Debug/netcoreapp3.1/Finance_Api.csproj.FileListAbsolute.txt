@@ -57,4 +57,3 @@ D:\Finance_project\finance-management-system\Finance_Api\obj\Debug\netcoreapp3.1
 D:\Finance_project\finance-management-system\Finance_Api\obj\Debug\netcoreapp3.1\Finance_Api.dll
 D:\Finance_project\finance-management-system\Finance_Api\obj\Debug\netcoreapp3.1\Finance_Api.pdb
 D:\Finance_project\finance-management-system\Finance_Api\obj\Debug\netcoreapp3.1\Finance_Api.genruntimeconfig.cache
-D:\Finance_project\finance-management-system\Finance_Api\obj\Debug\netcoreapp3.1\Finance_Api.csproj.AssemblyReference.cache

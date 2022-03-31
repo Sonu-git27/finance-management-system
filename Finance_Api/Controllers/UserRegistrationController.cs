@@ -18,7 +18,7 @@ namespace Finance_Api.Controllers
 
         [HttpGet]
         [Route("Listr")]
-        public IActionResult Listur()
+        public IActionResult Listr()
         {
             var data = from UserRegistration in db.UserRegistration select UserRegistration;
             return Ok(data);
@@ -107,16 +107,16 @@ namespace Finance_Api.Controllers
         }
 
         [HttpPost]
-        [Route("Loginuser")]
+        [Route("login")]
         public IActionResult Loginuser([FromBody] User user)
         {
 
-            var isexist = db.UserRegistration.Any(b => b.UserName == user.UserName && b.AccPassword == user.AccPassword );
-            if (isexist)
+            var obj = db.UserRegistration.Any(b => b.UserName == user.UserName && b.AccPassword == user.AccPassword );
+            if (obj)
             {
-                return Ok(isexist);
+                return Ok(obj);
             }
-            return Unauthorized(isexist);
+            return Unauthorized(obj);
         }
 
     }
