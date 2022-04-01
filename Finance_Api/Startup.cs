@@ -28,7 +28,13 @@ namespace Finance_Api
         {
             services.AddControllers();
             services.AddDbContext<Fin_dbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddCors();
+            services.AddCors(sonu =>
+            {
+                sonu.AddDefaultPolicy(vamsi => {
+                    vamsi.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod();
+
+                });
+            });
 
         }
 
@@ -39,7 +45,7 @@ namespace Finance_Api
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseCors(option => { option.AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader(); });
+            app.UseCors();
             app.UseRouting();
 
             app.UseAuthorization();
