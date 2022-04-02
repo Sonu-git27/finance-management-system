@@ -95,11 +95,11 @@ namespace Finance_Api.Controllers
                     {
                         return StatusCode(400, "Unable to register user");
                     }
-                    return StatusCode(200, "User Registration successful");
+                    return StatusCode(200, Json("User Registration successful"));
 
                 } else
                 {
-                    return StatusCode(409, $"User '{userregistration.UserName}' already exists");
+                    return StatusCode(409, "User '{userregistration.UserName}' already exists");
 
                 }
             }
