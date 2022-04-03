@@ -5722,19 +5722,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sonua\\.nuget\\packages\\": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Finance_project\\finance-management-system\\Finance_Api\\Finance_Api.csproj",
+      "projectUniqueName": "E:\\git\\finance-management-system\\Finance_Api\\Finance_Api.csproj",
       "projectName": "Finance_Api",
-      "projectPath": "D:\\Finance_project\\finance-management-system\\Finance_Api\\Finance_Api.csproj",
-      "packagesPath": "C:\\Users\\sonua\\.nuget\\packages\\",
-      "outputPath": "D:\\Finance_project\\finance-management-system\\Finance_Api\\obj\\",
+      "projectPath": "E:\\git\\finance-management-system\\Finance_Api\\Finance_Api.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "E:\\git\\finance-management-system\\Finance_Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sonua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

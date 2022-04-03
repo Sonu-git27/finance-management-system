@@ -1,0 +1,74 @@
+#nav{
+    border: 2px solid black;
+    overflow: auto;
+    background-color: rgb(238, 237, 237);
+
+}
+.box{
+    height:250px;
+    width:500px;
+    border:3px solid;
+    content: center;
+    margin-left:650px;
+    color: rgb(231, 224, 224);
+    padding-top: 20px;
+    background-color: rgb(75, 75, 95);
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.box1{
+   
+    border:3px solid;
+    background-color: rgb(90, 153, 90);
+    text-align: center;
+    color: black;
+
+}
+.box2{
+    height: 100%;
+   width: 100%;
+   background-size:cover;
+    border:3px solid;
+    background-image: url("https://av.sc.com/in/content/images/in-digital-serving-bg.jpg");
+    color:rgb(236, 225, 225);
+    
+    
+}
+.box3{
+    height: 30px;
+    width: 120px;
+    border:2px solid;
+}
+
+#nav{
+    border: 2px solid black;
+    overflow: auto;
+    background-color: rgb(72, 83, 85);
+
+}
+
+#p1{
+    float: left;
+    color: white;
+    box-sizing: content-box;
+    /* width: 50px;
+    height: 50px; */
+}
+#p2{
+    float: right;
+    color: white;
+}
+button{
+    /* height: 50px;
+    width: 100px;
+    font-size: large; */
+    background-color:white;
+}
+th{
+    border: 1px solid white;
+    width: 15% ;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}

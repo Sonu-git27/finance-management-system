@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "204fed8a-8b56-4ee3-914a-453c9e47bbe1": {
+      "ProjectGuid": "204fed8a-8b56-4ee3-914a-453c9e47bbe1",
+      "DisplayName": "Finance_Api",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

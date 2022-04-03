@@ -1,0 +1,17 @@
+
+div{
+    text-align: center;
+    border: 2px solid black;
+    width: 500px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("https://av.sc.com/in/content/images/in-digital-serving-bg.jpg");
+    background-size: cover;
+    color: white;
+    padding-top: 40px;
+}
+h4{
+    background-color: rgb(182, 180, 180);
+    color: black;
+}

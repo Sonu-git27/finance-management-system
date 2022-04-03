@@ -1,0 +1,29 @@
+#p1{
+    border: 2px solid black;
+    overflow: 100%;
+    margin: 25px;
+    padding: 25px;
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("https://av.sc.com/in/content/images/in-digital-serving-bg.jpg");
+    background-size: cover; 
+    color: white; 
+
+}
+#p{
+    text-align: center;
+}
+#p3{
+    border: 2px dotted;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    padding: 20px;
+}
+button{
+    background-color: rgb(75, 74, 74);
+    color: white;
+}
